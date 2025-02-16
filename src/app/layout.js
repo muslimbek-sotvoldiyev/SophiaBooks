@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@/components/dashboard/theme-provider";
+import LoginCheck from "@/components/loginCheck";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Dashboard from "@/components/dashboard/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
             enableSystem
             disableTransitionOnChange
           >
-            <Dashboard>{children}</Dashboard>
+            <LoginCheck>{children}</LoginCheck>
           </ThemeProvider>
         </body>
       </html>
