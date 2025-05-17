@@ -9,8 +9,12 @@ import {
   Frame,
   GalleryVerticalEnd,
   Map,
+  Mars,
+  MarsIcon,
   PieChart,
+  SaveAll,
   Settings2,
+  Sparkles,
   SquareTerminal,
 } from "lucide-react";
 
@@ -35,83 +39,91 @@ const data = {
   },
   teams: [
     {
-      name: "Acme Inc",
+      name: "BookLand",
       logo: GalleryVerticalEnd,
       plan: "Enterprise",
     },
     {
-      name: "Acme Corp.",
+      name: "Bayon",
       logo: AudioWaveform,
       plan: "Startup",
     },
     {
-      name: "Evil Corp.",
+      name: "Bookify  ",
       logo: Command,
       plan: "Free",
     },
   ],
   navMain: [
     {
-      title: "Playground",
+      title: "Tovarlar",
       url: "#",
       icon: SquareTerminal,
       isActive: true,
       items: [
         {
-          title: "History",
-          url: "#",
-        },
-        {
-          title: "Starred",
-          url: "#",
-        },
-        {
-          title: "Settings",
-          url: "#",
-        },
+          title: "Katalog",
+          url: "/products/catalog",
+        }
       ],
     },
     {
-      title: "Models",
+      title: "Sotuvlar",
       url: "#",
       icon: Bot,
       items: [
         {
-          title: "Genesis",
+          title: "Yangi sotuv",
+          url: "/order/new-order",
+        },
+        {
+          title: "Barcha sotuvlar ",
+          url: "/order/all",
+        },
+        {
+          title: "Kassani almashtirish",
+          url: "/order/cash-shifts",
+        },
+
+        {
+          title: "Naqd pul operatsiyalar",
+          url: "/order/cashbox-operations",
+        },
+      ],
+    },
+    {
+      title: "Mijozlar",
+      url: "#",
+      icon: BookOpen,
+      items: [
+        {
+          title: "Barcha mijozlar",
           url: "#",
         },
         {
-          title: "Explorer",
+          title: "Mijozlar guruhi",
           url: "#",
         },
         {
-          title: "Quantum",
+          title: "Sodiqlik dasturi",
+          url: "#",
+        },
+        {
+          title: "Mijozlar qarzdorligi",
           url: "#",
         },
       ],
     },
     {
-      title: "Documentation",
-      url: "#",
-      icon: BookOpen,
+      title: "Marketing",
+      url: '#',
+      icon: SaveAll,
       items: [
         {
-          title: "Introduction",
-          url: "#",
-        },
-        {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
-        },
-      ],
+          title: "Promo kodlar",
+          url: "#"
+        }
+      ]
     },
     {
       title: "Settings",
@@ -119,21 +131,9 @@ const data = {
       icon: Settings2,
       items: [
         {
-          title: "General",
-          url: "#",
-        },
-        {
-          title: "Team",
-          url: "#",
-        },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
-        },
+          title: "Profil",
+          url: "/profile",
+        }
       ],
     },
   ],
